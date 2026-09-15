@@ -5,14 +5,14 @@ const checklistItems = [{
 	min: 0,
 	max: 20,
 	val: 0,
-	limit: 12
+	limit: 13
 }, {
 	id: "windGust",
 	label: "Wind Gust (MPH)",
 	min: 0,
 	max: 25,
 	val: 0,
-	limit: 15
+	limit: 16
 }, {
 	id: "alcohol",
 	label: "Hours Since Last Drink",
