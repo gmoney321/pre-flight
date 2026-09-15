@@ -125,5 +125,10 @@ formFields.addEventListener('input', function(event) {
 		const hue = (1 - curvedRisk) * 120;
         // Sets color of status indicator
 		statusIndicator.style.backgroundColor = `hsl(${hue}, 100%, 45%)`;
-	}
+        
+        // Inside your existing 'input' event listener:
+        const percent = ((currentValue - currentSlider.min) / (currentSlider.max - currentSlider.min)) * 100;
+        currentSlider.style.background = `linear-gradient(to right, #007aff ${percent}%, #e0e0e0 ${percent}%)`;
+    
+    }
 });
